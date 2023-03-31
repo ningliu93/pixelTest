@@ -25,7 +25,17 @@
 	<h1>My Shopping Cart</h1>
 	<p>Item: T-Shirt</p>
 	<p>Price: $20</p>
-	<button id="add-to-cart">Add to Cart</button>
-	<button id="checkout">Checkout</button>
+	<button id="addToCartButton">Purchase</button>
+	<script type="text/javascript">
+	  $('#addToCartButton').click(function() {
+	    fbq('track', 'Purchase', {currency: "USD", value: 30.00});
+	  });
+	</script>
+	<button id="addToCartButton">Purchase</button>
+	<script type="text/javascript">
+	  $('#addToCartButton').click(function() {
+	    fbq('track', 'Purchase', {currency: "USD", value: 30.00});
+	  });
+	</script>
 </body>
 </html>
