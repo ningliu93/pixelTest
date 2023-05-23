@@ -24,14 +24,14 @@
 <body>
 	<h1>My Shopping Cart</h1>
 	<p>Item: T-Shirt</p>
-	<p>Price: $20</p>
+	<p>Price: $60</p>
 	<button id="addToCartButton">Add to cart</button>
 	<button id="checkoutButton">Purchase</button>
 	<script type="text/javascript">
 	  $('#checkoutButton').click(function() {
 	    fbq('track', 'Purchase', {
             currency: "USD", 
-            value: 20.00,
+            value: 50.00,
             contents: [
             {
                 id: '100',
@@ -46,9 +46,9 @@
                 seller_id: '12345762321'
             },
 	    {
-                id: '100',
+                id: '102',
                 quantity: 1,
-                item_price: 100,
+                item_price: 300,
                 seller_id: '1232321'
             }],
             content_type: 'product'
