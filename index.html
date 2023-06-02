@@ -4,8 +4,16 @@
 	<title>Shopping Cart</title>
 	<meta name="facebook-domain-verification" content="nhm5i78r0i20er8fzwesn8e1obnhpp" />
 </head>
-	<!-- Meta Pixel Code -->
-	<script>
+<body>
+	<h1>My Shopping Cart</h1>
+	<p>Item: T-Shirt</p>
+	<p>Price: $60</p>
+	<button id="addToCartButton">Add to cart</button>
+	<button id="checkoutButton">Purchase</button>
+</body>
+
+<!-- Meta Pixel Code -->
+<script>
 	!function(f,b,e,v,n,t,s)
 	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -16,19 +24,8 @@
 	'https://connect.facebook.net/en_US/fbevents.js');
 	fbq('init', '672647721389753');
 	fbq('track', 'PageView');
-	</script>
-	<noscript><img height="1" width="1" style="display:none"
-	src="https://www.facebook.com/tr?id=672647721389753&ev=PageView&noscript=1"
-	/></noscript>
-	<!-- End Meta Pixel Code -->
-<body>
-	<h1>My Shopping Cart</h1>
-	<p>Item: T-Shirt</p>
-	<p>Price: $60</p>
-	<button id="addToCartButton">Add to cart</button>
-	<button id="checkoutButton">Purchase</button>
-	<script type="text/javascript">
-	  $('#checkoutButton').click(function() {
+
+    $('#checkoutButton').click(function() {
 	    fbq('track', 'Purchase', {
             currency: "USD", 
             value: 50.00,
@@ -56,5 +53,9 @@
         alert('Event fired with seller_id 1234321, 12345762321, and 1232321!');
 	  });
 	</script>
-</body>
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=672647721389753&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Meta Pixel Code -->
+
 </html>
