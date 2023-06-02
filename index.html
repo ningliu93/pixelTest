@@ -26,6 +26,7 @@
 	fbq('track', 'PageView');
     $(document).ready(function(){
     $('#checkoutButton').click(function() {
+	    console.log('purchase button clicked and pixel fired');
 	    fbq('track', 'Purchase', {
             currency: "USD", 
             value: 50.00,
