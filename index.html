@@ -24,7 +24,7 @@
 	'https://connect.facebook.net/en_US/fbevents.js');
 	fbq('init', '672647721389753');
 	fbq('track', 'PageView');
-
+    $(document).ready(function(){
     $('#checkoutButton').click(function() {
 	    fbq('track', 'Purchase', {
             currency: "USD", 
@@ -52,6 +52,7 @@
         });
         alert('Event fired with seller_id 1234321, 12345762321, and 1232321!');
 	  });
+    });
 	</script>
 	<noscript><img height="1" width="1" style="display:none"
 	src="https://www.facebook.com/tr?id=672647721389753&ev=PageView&noscript=1"
